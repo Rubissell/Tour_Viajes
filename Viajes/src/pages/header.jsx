@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { BsPersonAdd } from 'react-icons/bs';
 import './css/header.css'
 export function Header() {
   return (
@@ -19,6 +20,7 @@ export function Header() {
             <Link className="nav-link">Destinos</Link>
             <Link className="nav-link">Expertos en viajes</Link>
             <Link className="nav-link">Libreria</Link>
+            <Link className="nav-link" to='/login'><BsPersonAdd height='50px' /></Link>
           </div>
         </nav>
       </div>
