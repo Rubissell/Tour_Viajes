@@ -4,17 +4,17 @@ import { Home } from "./pages/home"
 import { Lugar } from "./pages/Lugar";
 import { Login } from "./pages/Login";
 import { Nave } from "./Nave";
+import { ViajesMedida } from "./pages/viajesMedida";
 function App() {
 
   return (
     <BrowserRouter> 
       <Routes>
-
         <Route element={<Nave />}>  
           <Route path="/" element={<Home />} />
           <Route path="/lugar" element={<Lugar />} />
+          <Route path="/viaje" element={<ViajesMedida />} />
         </Route>
-
         <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>

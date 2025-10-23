@@ -16,7 +16,7 @@ export function Header() {
           <div className="botones">
           
             <Link className="nav-link" to="/lugar">¿como funciona?</Link>
-            <Link className="nav-link">Viajes a medida</Link>
+            <Link className="nav-link" to= "/viaje">Viajes a medida</Link>
             <Link className="nav-link">Destinos</Link>
             <Link className="nav-link">Expertos en viajes</Link>
             <Link className="nav-link">Libreria</Link>
