@@ -1,4 +1,4 @@
-import './css/home.css'
+
 import { BsPersonHeart } from 'react-icons/bs';
 import { FaRegClipboard } from 'react-icons/fa';
 import { GiThreeKeys } from 'react-icons/gi';
@@ -10,7 +10,7 @@ export function Home() {
             
                     <div className="lg:col-span-8 grid grid-cols-2 grid-rows-2 gap-4 h-full">
                         <div className="row-span-2 relative group overflow-hidden rounded-2xl shadow-2xl">
-                            <img src="https://i.pinimg.com/736x/9d/6b/af/9d6baf6d9fbc4aa810f9f78b8f42616a.jpg" 
+                            <img src="https://i.pinimg.com/736x/74/60/0e/74600e0fb9af24b9ea60be3491a7ec3f.jpg" 
                                 alt="Destino de viaje" 
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -171,7 +171,7 @@ export function Home() {
                             <ul className="space-y-4">
                                 <li className="flex items-center gap-3 text-gray-300">
                                     <i className="fas fa-phone text-cyan-500"></i>
-                                    +1 (555) 123-4567
+                                    +51 9971083128
                                 </li>
                                 <li className="flex items-center gap-3 text-gray-300">
                                     <i className="fas fa-envelope text-cyan-500"></i>

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { BsPersonAdd } from 'react-icons/bs';
-import './css/header.css'
 export function Header() {
   return (
     <>
@@ -11,20 +10,12 @@ export function Header() {
       {/* Logo con efecto moderno */}
       <div className="logo flex-shrink-0">
         <Link to="/" className="nav-link group">
-          <div className="flex items-center space-x-3">
-            <div className="relative">
-              <div className="w-14 h-14 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-2xl flex items-center justify-center transform group-hover:scale-105 transition-all duration-500 shadow-lg shadow-blue-500/25">
-                <span className="text-white text-xl font-bold">✈️</span>
-              </div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-70 transition-opacity duration-500"></div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-black bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
-                BViajes
-              </span>
-              <span className="text-xs text-gray-500 font-medium -mt-1">Tour Experiences</span>
-            </div>
-          </div>
+            <img 
+          src="img/image.png" 
+          alt="Logo BViajes" 
+          className="w-[100px] h-[100px] object-contain transition-transform duration-500 group-hover:scale-105" 
+            />
+
         </Link>
       </div>
 
@@ -32,11 +23,11 @@ export function Header() {
       <div className="botones hidden lg:flex items-center space-x-1">
         
         {[
-          { to: "/lugar", label: "¿Cómo funciona?", icon: "" },
-          { to: "/viaje", label: "Viajes a medida", icon: "" },
-          { to: "#", label: "Destinos", icon: "", dropdown: true },
-          { to: "#", label: "Expertos", icon: "" },
-          { to: "#", label: "Librería", icon: "" }
+          { to: "/lugar", label: "¿Cómo funciona?",  },
+          { to: "/viaje", label: "Viajes a medida",  },
+          { to: "#", label: "Destinos",dropdown: true },
+          { to: "#", label: "Expertos", },
+          { to: "/libreria", label: "Librería"}
         ].map((item, index) => (
           <div key={item.label} className="relative group">
             <Link 
