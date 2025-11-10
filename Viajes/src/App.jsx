@@ -1,12 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/home"
+
 //import { Header } from "./pages/header";
-import { Lugar } from "./pages/Lugar";
-import { Login } from "./pages/Login";
+
 import { Nave } from "./Nave";
-import { ViajesMedida } from "./pages/viajesMedida";
-import { Admin } from "./shared/admin";
-import { Libreria } from "./pages/Librerias";
+import { Nave_admin } from "./Nave_admin";
+import { SubirImg } from "./pages/admin/SubirImg";
+import { Home } from "./pages/client/home";
+import { ViajesMedida } from "./pages/client/viajesMedida";
+import { Libreria } from "./pages/client/Librerias";
+import { Lugar } from "./pages/client/Lugar";
+import { Login } from "./shared/Login";
 function App() {
 
   return (
@@ -20,9 +23,16 @@ function App() {
           <Route path="/libreria" element={< Libreria />} />
           <Route path="/como" element={< Lugar />} />
         </Route>
+
         <Route path="/login" element={<Login />} />
+
+        <Route path="/admin" element={<Nave_admin />}>
+          <Route path="subirimg" element={ <SubirImg />} />
+        </Route>
+
       </Routes>
     </BrowserRouter>
+   
   )
 }
 

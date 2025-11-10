@@ -10,7 +10,7 @@ export function Lugar () {
              <section class="max-w-7xl mx-auto px-6 py-20">
                 <div class="text-center mb-16">
                 <h2 class="text-4xl font-extrabold bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    ¿Cómo funciona viajar con BViajes?
+                    ¿Cómo funciona viajar con TRAVEL TOUR?
                 </h2>
                 <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
                     Diseñamos experiencias únicas de viaje en 3 simples pasos. Tú eliges, nosotros nos encargamos del resto.

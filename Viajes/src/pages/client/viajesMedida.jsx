@@ -1,5 +1,5 @@
-import { AnimatedTestimonialsDemo } from "../components/AnimatedTestimonialsDemo";
 
+import { AnimatedTestimonialsDemo } from "../../components/AnimatedTestimonialsDemo";
 export function ViajesMedida () {
     return (
         <>
